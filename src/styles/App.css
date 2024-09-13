@@ -1,0 +1,124 @@
+/* Opšti stilovi */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+
+  background: linear-gradient(135deg, #a2778f, #abd7cc);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h2, h3 {
+  margin: 0;
+}
+
+h2 {
+  color: #48c6ef; 
+}
+
+.main-container {
+  padding: 20px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.header {
+  /* background-color: #ffffff; */
+  color: black;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  font-size: 2rem;
+    color: #000000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.header h1, .header h3 {
+  margin-bottom: 10px;
+}
+
+.header h3 {
+  font-size: 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+/* Mobilni stilovi */
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-section img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skills-section ul,
+  .contact-section ul {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .contact-button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* Tablet stilovi */
+@media (min-width: 576px) and (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .about-section img {
+    width: 60%;
+  }
+}
+
+/* Desktop stilovi */
+@media (min-width: 768px) {
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-section img {
+    width: 50%;
+  }
+}
+
+
+
+

@@ -1,0 +1,114 @@
+#experience {
+  /* margin-top: 150px; */
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: grid;
+  -ms-flex-align: center;
+  border-radius: 10px;
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.experience-section {
+   /* opacity: 0;
+   transform: translateY(100px);
+   transition: transform 0.5s ease-out, opacity 0.5s ease-out; */
+}
+
+.experience-section h2 {
+  font-size: 2rem;
+    color: #333;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.experience-card {
+  background-color: #f4f4f4;
+  border-left: 5px solid #abd7cc;
+  padding: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  max-height: 350px; 
+  margin-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+
+
+  
+ 
+}
+
+.experience-card-item {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.experience-card-item.show {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.experience-card.open {
+  max-height: max-content;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.read-more-btn {
+  background-color: #c7adbb;
+  color: #000000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: #96c1b0;
+}
+
+.additional-info {
+  margin-top: 20px;
+}
+
+.additional-info ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.additional-info ul li {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.experience-card h3 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+}
+
+.experience-card .years {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+}
+
+.experience-card .description {
+  font-size: 1.2rem;
+  color: #34495e;
+}
+
+.experience-card .technologies {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #95a5a6;
+}
